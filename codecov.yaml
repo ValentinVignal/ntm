@@ -26,4 +26,29 @@ flags:
       - packages/ntm_parser/
   ntm_scanner:
     paths:
-      - src/ntm_scanner/
+      - packages/ntm_scanner/
+
+coverage:
+  status:
+    project:
+      ntm:
+        flags:
+          - ntm
+      ntm_ast:
+        flags:
+          - ntm_ast
+      ntm_cli:
+        flags:
+          - ntm_cli
+      ntm_core:
+        flags:
+          - ntm_core
+      ntm_interpreter:
+        flags:
+          - ntm_interpreter
+      ntm_parser:
+        flags:
+          - ntm_parser
+      ntm_scanner:
+        flags:
+          - ntm_scanner
