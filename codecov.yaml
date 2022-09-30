@@ -1,0 +1,29 @@
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+
+ignore:
+  - "**/example/"
+
+flags:
+  ntm:
+    paths:
+      - packages/ntm/
+  ntm_ast:
+    paths:
+      - packages/ntm_ast/
+  ntm_cli:
+    paths:
+      - packages/ntm_cli/
+  ntm_core:
+    paths:
+      - packages/ntm_core/
+  ntm_interpreter:
+    paths:
+      - packages/ntm_interpreter/
+  ntm_parser:
+    paths:
+      - packages/ntm_parser/
+  ntm_scanner:
+    paths:
+      - src/ntm_scanner/

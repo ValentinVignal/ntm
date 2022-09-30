@@ -17,3 +17,6 @@ scripts:
   test:
     exec: dart test .
     description: Run `dart test` in all packages.
+  test-coverage:
+    exec: dart test --coverage=coverage .
+    description: Run `dart test` in all packages.
