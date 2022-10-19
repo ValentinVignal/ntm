@@ -1,0 +1,12 @@
+{
+    "projectName": "NtmLangium",
+    "languages": [{
+        "id": "ntm-langium",
+        "grammar": "src/language-server/ntm-langium.langium",
+        "fileExtensions": [".ntm"],
+        "textMate": {
+            "out": "syntaxes/ntm-langium.tmLanguage.json"
+        }
+    }],
+    "out": "src/language-server/generated"
+}

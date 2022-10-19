@@ -1,0 +1,57 @@
+{
+  "name": "ntm-langium",
+  "scopeName": "source.ntm-langium",
+  "fileTypes": [
+    ".ntm"
+  ],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "name": "keyword.control.ntm-langium",
+      "match": "\\b(Hello|person)\\b"
+    },
+    {
+      "name": "string.quoted.double.ntm-langium",
+      "begin": "\"",
+      "end": "\""
+    },
+    {
+      "name": "string.quoted.single.ntm-langium",
+      "begin": "'",
+      "end": "'"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.block.ntm-langium",
+          "begin": "/\\*",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.ntm-langium"
+            }
+          },
+          "end": "\\*/",
+          "endCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.ntm-langium"
+            }
+          }
+        },
+        {
+          "begin": "//",
+          "beginCaptures": {
+            "1": {
+              "name": "punctuation.whitespace.comment.leading.ntm-langium"
+            }
+          },
+          "end": "(?=$)",
+          "name": "comment.line.ntm-langium"
+        }
+      ]
+    }
+  }
+}
